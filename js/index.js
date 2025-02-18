@@ -1,14 +1,19 @@
-let storeName = 'Store';
-let storeDescription = { 
-    budget : 1000, 
-    employees : ['s','t','r'], 
-    products : {
-        apple : 100,
-        banana : 300
-    },
-    open : true 
+"use strict"
+
+let numberOffFilms = +prompt("Count of films", "");
+let personalMovieDB = {
+    count : numberOffFilms,
+    movies : {},
+    actors : {},
+    genres : [],
+    privat : false
 };
 
-storeDescription.fr = '123';
-console.log(storeDescription.fr);
-console.log(storeDescription);
+let movieName = prompt("Movie name", "");
+let movieBal = prompt("Movie ball", "");
+let movieName1 = prompt("Movie name", "");
+let movieBal1 = prompt("Movie ball", "");
+
+personalMovieDB.movies[movieName] = movieBal;
+personalMovieDB.movies[movieName1] = movieBal1;
+console.log(personalMovieDB);
